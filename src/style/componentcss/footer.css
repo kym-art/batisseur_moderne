@@ -1,0 +1,11 @@
+footer {
+  background-color: #333;
+  color: #f4f4f4;
+  text-align: center;
+  border-color: brown;
+  /* border-style: solid; */
+  border-width: 20px;
+  border-radius: 7px;
+  font-size: 20px;
+  font-style: italic;
+}

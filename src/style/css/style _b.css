@@ -1,123 +1,26 @@
-/* Styles généraux */
+/* 1. On garde le design d'origine */
 body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
   background-color: #f4f4f4;
-  /* color: #333; */
   text-align: center;
-  /* background-size: 1%;: */
   width: 100%;
   height: 100%;
+  
 }
 
-header {
-  background-color: #2c3e50;
-  width: 96%;
-  color: white;
-  padding: 2%;
-  text-transform: capitalize;
-  display: flex;
-  gap: 15%;
-  border-radius: 30px;
-  border-bottom: #b11f1f 4px solid;
-  /* position: fixed; */
-  height: 3rem;
-}
-header p:hover {
-  font-size: 1.2rem;
-  font-style: italic;
-  color: darkmagenta;
-}
-header img {
-  max-width: 200px;
-  animation: 3s show linear 1;
-}
+/* 2. Header */
+
 
 h1 {
   margin: 0;
-  font: size 1.2rem;
+  font-size: 1.2rem; /* ⚠️ corrigé: font-size au lieu de font: size */
 }
 
-nav {
-  margin-top: 10px;
-}
 
-.barre_nav {
-  list-style: none;
-  padding: 0;
-}
 
-.elmt_nav {
-  display: flex;
-  justify-content: center;
-  gap: 10%;
-}
-
-.elmt_nav p {
-  margin: 0;
-  padding: 10px;
-}
-
-.elmt_nav a {
-  text-decoration: none;
-  color: white;
-  font-weight: bold;
-  transition: color 0.3s;
-}
-
-.elmt_nav a:hover {
-  color: #1abc9c;
-}
-
-/* Style du paragraphe principal */
-
-.p0 {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1rem;
-  margin: 1rem;
-  align-items: center;
-}
-.p0 .p2 {
-  /* border-radius: 4px; */
-  border-radius: 30px;
-  border-bottom: #b11f1f 4px solid;
-  box-shadow: 0 1px 10px rebeccapurple;
-  /* padding:min(1rem,8%);  */
-}
-.p2 ul {
-  list-style: none;
-  margin: 3rem;
-  gap: 1rem;
-  text-transform: capitalize;
-}
-.p2 li {
-  display: block;
-  gap: 1rem;
-  align-items: center;
-  color: #b11f1f;
-  font-size: 22px;
-  font-weight: 700;
-  font-style: italic;
-  /* line-height: 2rem; */
-}
-.p2 p {
-  font-size: 15px;
-  font-weight: 550;
-  line-height: 1.2rem;
-}
-.para0 {
-  font-size: 18px;
-  font-weight: bold;
-  margin-top: 20px;
-}
-
-.para1 {
-  font-size: 16px;
-  margin-bottom: 20px;
-}
-
+/* 5. Images */
 img {
   width: 60%;
   height: auto;
@@ -127,159 +30,55 @@ img {
   box-shadow: 0 1px 10px rebeccapurple;
   max-height: 600px;
   border-bottom: #b11f1f 4px solid;
-  /* min-width: 200px; */
-  /* min-height: 100px; */
-}   
-
-.para4 {
-  border-color: coral;
-  text-transform: capitalize;
-  font-style: italic;
-  margin-top: 30px;
-  display: block;
-  background-color: #2c3e50;
-  font-size: 30px;
-  border-radius: 40px;
-  color: white;
 }
 
-.para5 {
-  font-size: 45px;
-  font-weight: bold;
-  margin-bottom: 10px;
-  text-transform: capitalize;
-}
 
-.para6 {
-  width: 100%;
-}
-.para6 ul {
-  list-style: none;
-  padding: 0;
 
-  /* box-shadow:0 1px 10px rebeccapurple ; */
-  /* max-height: 600px;
- */
-}
-.para6 li {
-  background-color: white;
-
-  width: 100%;
-  padding: 10px;
-  margin: 5px;
-  border-radius: 5px;
-  display: flex;
-  font-weight: 700;
-  opacity: 1;
-  color: #2c3e50;
-  font-style: italic;
-  gap: 2rem;
-}
-.para6 li p {
-  /* color: #b11f1f; */
-  text-transform: capitalize;
-  text-shadow: 0 2x rebeccapurple;
-  line-height: 1.5rem;
-}
-.para6 li span {
-  font-size: 80px;
-  /* display:flex; */
-}
-.para6 li span:hover {
-  font-style: oblique;
-  color: #b11f1f;
-  transition: 0.1s;
-}
-
+/* 8. Footer */
 footer {
   background-color: #333;
   color: #f4f4f4;
   text-align: center;
-  border-color: brown;
-  /* border-style: solid; */
-  border-width: 20px;
   border-radius: 7px;
   font-size: 20px;
   font-style: italic;
 }
 
-/* responsive design pou/r tablette */
-/* Responsive design pour tablette */
+/* 9. Responsive tablette */
 @media (max-width: 1024px) {
   header {
-    /* flex-direction:column; */
     display: flex;
     gap: 1rem;
     text-align: center;
   }
 
-  .elmt_nav {
-    flex-direction: column;
-    gap: 1rem;
-    display: none;
-  }
-
-  .p0 {
-    flex-direction: column;
-  }
-
+  
+  
   img {
     width: 80%;
   }
 
-  .para6 li {
-    flex-direction: column;
-    align-items: center;
-    gap: 0.5rem;
-  }
-
-  .para6 li span {
-    font-size: 60px;
-  }
+ 
 }
 
-/* Responsive design pour mobile */
+/* 10. Responsive mobile */
 @media (max-width: 600px) {
   header img {
     max-width: 120px;
   }
 
-  .p2 ul {
-    margin: 1rem;
-  }
-
-  .p2 li {
-    font-size: 18px;
-  }
-
-  .para0,
-  .para1 {
-    font-size: 14px;
-  }
-
-  .para5 {
-    font-size: 30px;
-  }
-
-  .para4 {
-    font-size: 20px;
-    padding: 1rem;
-  }
-
-  .para6 li span {
-    font-size: 40px;
-  }
+  
+  
 
   img {
     width: 100%;
   }
 }
 
+/* 11. Animation */
 @keyframes show {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
+  from { opacity: 0; }
+  to { opacity: 1; }
 }
+
+ 
