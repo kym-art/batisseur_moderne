@@ -54,16 +54,16 @@ function Navbar({ currentpage }) {
           <button className="btn btn-primary" onClick={handleclick}>
             fermer
           </button>
-          <Link to="/" className="link">
+          <Link to="/" className="link1">
             Accueil
           </Link>
-          <Link to="/s" className="link">
+          <Link to="/s" className="link1">
             nos services
           </Link>
-          <Link to="/r" className="link">
+          <Link to="/r" className="link1">
             Nos realisations
           </Link>
-          <Link to="/p" className="link">
+          <Link to="/p" className="link1">
             A propos
           </Link>
         </div>
